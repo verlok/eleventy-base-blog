@@ -9,7 +9,7 @@ tags:
 ---
 
 <figure>
-	<img src="creation-of-adam.webp" alt="Michelangelo's 'Creation of Adam' painting" sizes="648px" loading="eager">
+	<img src="creation-of-adam.webp" alt="Michelangelo's 'Creation of Adam' painting" sizes="648px" loading="eager" fetchpriority="high">
 	<figcaption>Michelangelo's "Creation of Adam" painting</figcaption>
 </figure>
 

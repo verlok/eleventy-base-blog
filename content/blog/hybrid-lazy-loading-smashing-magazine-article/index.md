@@ -11,7 +11,7 @@ tags:
 On <time datetime="2019-05-06">May 6th, 2019</time> I wrote my first article on **Smashing Magazine**: <a href="https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/">Hybrid Lazy Loading: A Progressive Migration To Native Lazy Loading</a>.
 
 <figure>
-  <img src="vanilla-lazyload-smashing.png" alt="A screenshot of the article on Smashing Magazine" sizes="648px" loading="eager">
+  <img src="vanilla-lazyload-smashing.png" alt="A screenshot of the article on Smashing Magazine" sizes="648px" loading="eager" fetchpriority="high">
   <figcaption>A screenshot of the article on Smashing Magazine</figcaption>
 </figure>
 

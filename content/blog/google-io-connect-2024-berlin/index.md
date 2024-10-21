@@ -13,7 +13,7 @@ And as a Google Developer Expert (GDE), on the next day I also took part to the 
 Keep reading to find out what these events were like and what I liked most of them.
 
 <figure>
-	<img src="01_cover.jpg" alt="Andrea Verlicchi leaning on the slash between the I and the O of the Google I/O Connect logo covered in flowers" sizes="648px" loading="eager">
+	<img src="01_cover.jpg" alt="Andrea Verlicchi leaning on the slash between the I and the O of the Google I/O Connect logo covered in flowers" sizes="648px" loading="eager" fetchpriority="high">
 	<figcaption>Me, comfortably leaning on the slash between the I and the O of the Google I/O Connect logo</figcaption>
 </figure>
 

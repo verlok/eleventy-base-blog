@@ -9,7 +9,7 @@ tags:
   - workplace trends
 ---
 
-<img src="remote-working-debate.webp" alt="An illustration of a person working remotely in a comfortable home office, surrounded by plants and personal items, with a laptop open." loading="eager" sizes="648px">
+<img src="remote-working-debate.webp" alt="An illustration of a person working remotely in a comfortable home office, surrounded by plants and personal items, with a laptop open." loading="eager" fetchpriority="high" sizes="648px">
 
 After nearly three years of working fully remotely, six years of "smart-working" (two remotely, three in the office), and more than 15 years working in offices, I’ve gained a lot of perspective on the remote work debate. While I support many of the benefits of working from home, I also recognize the drawbacks, and I think there’s a middle ground that works best.
 

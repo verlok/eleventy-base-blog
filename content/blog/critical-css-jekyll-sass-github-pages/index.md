@@ -10,7 +10,7 @@ tags:
 
 My blog used to be run by **Jekyll on GitHub pages** and its CSS was built using SASS. Today I decided to boost performance even more inlining the render-blocking _critical_ CSS, but even searching the internet I struggled to find an easy way to do it. This post is for you, in case you want to do the same.
 
-<img src="critical-css-jekyll-sass.png" alt="Random blurred code" sizes="648px" loading="eager">
+<img src="critical-css-jekyll-sass.png" alt="Random blurred code" sizes="648px" loading="eager" fetchpriority="high">
 
 ## The critical style
 

@@ -13,7 +13,7 @@ Now that `zsh` is the default shell on Mac OS terminal, you might want to setup 
 
 
 <figure>
-  <img src="terminal.png" alt="Mac OS X Terminal app | blog-11ty git:(main) * git status | On branch main | Your branch is ahead of 'origin/main' by 1 commit. (use &quot;git push&quot; to publish your local commits) | Changes not staged for commit: | (use &quot;git add ‹file>...&quot; to update what will be committed) | (use &quot;git restore ‹file>...&quot; to discard changes in working directory) | modified: content/blog/how-integrate-git-autocomplete-mac-shell-terminal-bash-zsh/index.md | no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)" loading="eager" sizes="648px">
+  <img src="terminal.png" alt="Mac OS X Terminal app | blog-11ty git:(main) * git status | On branch main | Your branch is ahead of 'origin/main' by 1 commit. (use &quot;git push&quot; to publish your local commits) | Changes not staged for commit: | (use &quot;git add ‹file>...&quot; to update what will be committed) | (use &quot;git restore ‹file>...&quot; to discard changes in working directory) | modified: content/blog/how-integrate-git-autocomplete-mac-shell-terminal-bash-zsh/index.md | no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)" loading="eager" fetchpriority="high" sizes="648px">
   <figcaption>Mac OS Terminal with git integration</figcaption>
 </figure>
 

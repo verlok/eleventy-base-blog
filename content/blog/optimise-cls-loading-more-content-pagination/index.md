@@ -9,7 +9,7 @@ tags:
 
 Cumulative Layout Shift (CLS) is an important, user-centric metric for measuring visual stability because it helps quantify how often users experience unexpected layout shifts — a low CLS helps ensure that the page is delightful.
 
-<img src="optimise-cls-load-more.webp" alt="A website showing 4 images and a Load More button" sizes="648px" loading="eager">
+<img src="optimise-cls-load-more.webp" alt="A website showing 4 images and a Load More button" sizes="648px" loading="eager" fetchpriority="high">
 
 What you might not know is:
 

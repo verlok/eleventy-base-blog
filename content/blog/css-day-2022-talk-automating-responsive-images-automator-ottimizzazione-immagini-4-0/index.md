@@ -9,7 +9,7 @@ tags:
 ---
 
 <figure>
-	<img src="me-stage-cssday.png" alt="Andrea Verlicchi on stage at CSS Day 2022, Faenza, April 1st 2022" sizes="648px" loading="eager">
+	<img src="me-stage-cssday.png" alt="Andrea Verlicchi on stage at CSS Day 2022, Faenza, April 1st 2022" sizes="648px" loading="eager" fetchpriority="high">
   <figcaption>Me on stage at CSS Day 2022, Faenza</figcaption>
 </figure>
 

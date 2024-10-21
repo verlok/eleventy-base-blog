@@ -11,7 +11,7 @@ tags:
 
 Do you want to boost performance on your website? You can do that by using **responsive images** and **lazy loading**! In this article, you will find the **HTML, JavaScript, and CSS code** to lazy load responsive images, to make browsers use **modern image formats** like **WebP** and **Jpeg2000**, and to enable **native lazy load** where supported.
 
-<img src="lazy-load-responsive-images-2020.webp" alt="Lazy Load responsive images in 2020" sizes="648px" loading="eager">
+<img src="lazy-load-responsive-images-2020.webp" alt="Lazy Load responsive images in 2020" sizes="648px" loading="eager" fetchpriority="high">
 
 ## Definitions
 

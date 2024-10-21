@@ -9,7 +9,7 @@ tags:
 ---
 
 <figure>
-	<img src="yield.webp" alt="A street signal, a white triangle with red border with a red YIELD word inside it" sizes="648px" loading="eager">
+	<img src="yield.webp" alt="A street signal, a white triangle with red border with a red YIELD word inside it" sizes="648px" loading="eager" fetchpriority="high">
 	<figcaption>Just a random yield image</figcaption>
 </figure>
 

@@ -7,7 +7,7 @@ tags:
 ---
 
 <figure>
-	<img src="screenshot.png" alt="A screenshot of an interaction in the performance trace tab" sizes="648px" loading="eager">
+	<img src="screenshot.png" alt="A screenshot of an interaction in the performance trace tab" sizes="648px" loading="eager" fetchpriority="high">
 	<figcaption>A screenshot of an interaction debug in the performance trace. Credits: web.dev</figcaption>
 </figure>
 

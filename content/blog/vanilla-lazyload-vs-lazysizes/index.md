@@ -10,7 +10,7 @@ tags:
 
 As the author of vanilla-lazyload, it's not the first time I get asked the question: <q>What are the differences between vanilla-lazyload and lazysizes?</q> This blog post is the answer to that question.
 
-<img src="vanilla-lazyload-vs-lazysizes.webp" alt="vanilla-lazyload vs lazysizes" sizes="648px" loading="eager">
+<img src="vanilla-lazyload-vs-lazysizes.webp" alt="vanilla-lazyload vs lazysizes" sizes="648px" loading="eager" fetchpriority="high">
 
 ## What are vanilla-lazyload and lazy sizes?
 

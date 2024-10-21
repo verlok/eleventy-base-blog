@@ -11,7 +11,7 @@ tags:
 
 Back in the day, when browser support for [native lazy loading](https://web.dev/browser-level-image-lazy-loading/) wasn’t widespread, the best practice was to use `data-src` attributes and a JavaScript library like my [vanilla-lazyload](https://github.com/verlok/vanilla-lazyload) to load images as they entered the viewport. Is this still best practice today?
 
-<img src="do-we-still-need-lazyload-2022.webp" alt="Do we still need lazy load libraries and data-src in 2022" sizes="648px" loading="eager">
+<img src="do-we-still-need-lazyload-2022.webp" alt="Do we still need lazy load libraries and data-src in 2022" sizes="648px" loading="eager" fetchpriority="high">
 
 ## What is lazy loading?
 

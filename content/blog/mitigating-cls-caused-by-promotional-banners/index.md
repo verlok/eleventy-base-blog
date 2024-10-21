@@ -8,7 +8,7 @@ tags:
 ---
 
 <figure>
-	<img src="screenshot.png" alt="The home page of a website with a top promotional banner pushing down the content below it" sizes="648px" loading="eager">
+	<img src="screenshot.png" alt="The home page of a website with a top promotional banner pushing down the content below it" sizes="648px" loading="eager" fetchpriority="high">
 	<figcaption>A website with a top promotional banner pushing down the content below it</figcaption>
 </figure>
 

@@ -11,7 +11,7 @@ tags:
 
 On April 6th 2019, Addy Osmany wrote about [native image lazy-loading](https://addyosmani.com/blog/lazy-loading/). Two days later Yvain, a front-end developer from Paris, [asked me](https://github.com/verlok/vanilla-lazyload/issues/331) if my [vanilla-lazyload](https://github.com/verlok/vanilla-lazyload/) could be a **loading attribute polyfill**, inspiring me to develop and release version 12 of the script, which features a new `use_native` option to enable native lazy-loading where supported. You can already use it today.
 
-<img src="lazyload-use_native.png" alt="Use native in vanilla lazyload" sizes="648px" loading="eager">
+<img src="lazyload-use_native.png" alt="Use native in vanilla lazyload" sizes="648px" loading="eager" fetchpriority="high">
 
 ## Wait... what?
 
@@ -62,12 +62,12 @@ In order to try it yourself, you need to follow the following steps.
 
 To make sure that your users see your images as soon as possible, I recommend to immediately load the topmost images of your webpage, only the ones that you know that will be placed _above-the-fold_ in the most common viewports, considering smartphones, tablets and computers.
 
-To do that, the first images in the page should be loaded using regular `<img>` tags. You can use the `loading="eager"` attribute to make sure they load as soon as possible.
+To do that, the first images in the page should be loaded using regular `<img>` tags. You can use the `loading="eager" fetchpriority="high"` attribute to make sure they load as soon as possible.
 
 ```html
 <img
   src="eager-eagle.jpg"
-  loading="eager"
+  loading="eager" fetchpriority="high"
   alt="Eager Eagle"
 />
 ```

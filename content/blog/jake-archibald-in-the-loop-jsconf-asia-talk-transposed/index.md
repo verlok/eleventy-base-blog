@@ -55,7 +55,7 @@ So, what we do is this: we queue a task. We queue a task to get back on to the m
 ## Meet the event loop
 
 <figure>
-	<img src="01 - the event loop and the task detour on the left.png" alt="The event loop and the task detour on the left" sizes="648px" loading="eager">
+	<img src="01 - the event loop and the task detour on the left.png" alt="The event loop and the task detour on the left" sizes="648px" loading="eager" fetchpriority="high">
 	<figcaption>This is how Jake depicted the event loop. It's a circle, the execution goes round and round, until a task is queued in the "task detour" on the left.</figcaption>
 </figure>
 

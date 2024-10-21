@@ -10,7 +10,7 @@ tags:
 ---
 
 <figure>
-	<img src="frame-video.png" alt="Andrea Verlicchi sitting in his living room, during the talk" sizes="648px" loading="eager">
+	<img src="frame-video.png" alt="Andrea Verlicchi sitting in his living room, during the talk" sizes="648px" loading="eager" fetchpriority="high">
   <figcaption>This is a frame of the video, before I dove into the technical parts</figcaption>
 </figure>
 

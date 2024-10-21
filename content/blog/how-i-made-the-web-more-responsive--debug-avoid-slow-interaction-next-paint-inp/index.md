@@ -11,7 +11,7 @@ tags:
 In May 2024, I started speaking at conferences and meetups about improving web responsiveness. My talks focus on debugging and preventing slow interactions, drawing from my experience auditing Interaction to Next Paint (INP) on dozens of clients' websites.
 
 <figure>
-	<img src="main-image.jpg" alt="Andrea Verlicchi speaking at We Love Speed, Nantes, 2024" loading="eager" sizes="648px">
+	<img src="main-image.jpg" alt="Andrea Verlicchi speaking at We Love Speed, Nantes, 2024" loading="eager" fetchpriority="high" sizes="648px">
   <figcaption>Me speasking at We Love Speed 2024, Nantes</figcaption>
 </figure>
 <!-- TODO: Replace title slide with video when available -->
