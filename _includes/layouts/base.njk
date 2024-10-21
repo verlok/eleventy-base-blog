@@ -4,66 +4,103 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+		{#- Google tag (gtag.js) #}
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26756203-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-26756203-1');
+		</script>
 
 		{#-
-		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. CSS:
-			* Add to a per-page bundle using `{% css %}{% endcss %}`
-			* Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		2. Or for JavaScript:
-			* Add to a per-page bundle using `{% js %}{% endjs %}`
-			* Retrieve via `{% getBundle "js" %}` or `{% getBundleFileUrl "js" %}`
-		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
+		1. You can add to them using `{% css %}`
+		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
+		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
 
 		{#- Add an arbitrary string to the bundle #}
-		{%- css %}/* This is an arbitrary CSS string added to the bundle */{% endcss %}
+		{%- css %}* { box-sizing: border-box; }{% endcss %}
 		{#- Add the contents of a file to the bundle #}
 		{%- css %}{% include "public/css/index.css" %}{% endcss %}
-		{#- Or you can add from node_modules #}
+		{#- Or add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
-		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
-		<style>{% getBundle "css" %}</style>
+		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+		<style>
+			{% getBundle "css" %}
+		</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
-		{#- Add the heading-anchors web component to the JavaScript bundle #}
-		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+		<meta name="description" content="{{ description or metadata.description }}">
+		<meta name="generator" content="{{ eleventy.generator }}">
+
+		{#- Atom and JSON feeds included by default #}
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+
+		{#- From realfavicongenerator #}
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#ffc40d">
+		<meta name="theme-color" content="#000000">
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
+			<a name="header"></a>
+			<div class="content">
+				<a href="/" class="home-link">
+					<!-- {{ metadata.title }} -->
+					<span class="name">Andrea</span>
+					<span class="surname">Verlicchi</span>
+				</a>
+				{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+				<nav>
+					<h2 class="visually-hidden">Top level navigation menu</h2>
+					<ul class="nav">
+						{%- for entry in collections.all | eleventyNavigation %}
+							{% if entry.key !== "Home" %}
+								<li class="nav-item">
+									<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+								</li>
+							{% endif %}
+						{%- endfor %}
+					</ul>
+				</nav>
+				{#- Now the things #}
+				<p>{{ metadata.description }}</p>
+			</div>
 		</header>
 
 		<main id="skip">
-			<heading-anchors>
+			<div class="content">
 				{{ content | safe }}
-			</heading-anchors>
+			</div>
 		</main>
 
 		<footer>
-			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
+			<div class="content">
+				You've reached the end of the page.
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="#header">👆 To the top</a>
+					</li>
+				</ul>
+			</div>
 		</footer>
 
-		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
-		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
 </html>
